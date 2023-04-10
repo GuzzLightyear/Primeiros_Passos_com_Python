@@ -1,0 +1,8 @@
+Condições (if...else)
+
+if carro.esquerdo:
+    bloco True
+else:
+    bloco False
+
+Nunca vão rodar juntos

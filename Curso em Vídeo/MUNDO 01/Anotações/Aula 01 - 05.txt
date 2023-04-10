@@ -1,0 +1,4 @@
+int = número inteiro
+float = número quebrado
+bool = boliano true or false
+str = ' Olá' '7,5'

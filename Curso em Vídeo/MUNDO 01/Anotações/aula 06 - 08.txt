@@ -1,0 +1,39 @@
+===================================================
+========UTILIZANDO MODULOS PYTHON PT.01============
+===================================================
+ Como Qualquer linguangem o python vem com a 
+ linguagem limitada, e é possível incluir 
+ uma bibliotecas neles através do: 
+ {(import'y')} \\Y exemplefica uma biblioteca
+ ==================================================
+ O import trará tudo da biblioteca, porém tem como 
+ puxar apenas um item da biblioteca
+ {(From'y'import'x')}
+ y é exemplo de uma biblioteca
+ x é um exemplo que pertence a biblioteca y
+ ==================================================
+Vamos treinar com a biblioteca 'math' para 
+complementar a nossa linguagem.
+{(import math)} importara tudo como:
+Ceil = arrendondar pra cima
+floor = arrendondar pra baixo
+trunc = tirar o valor pra trás da virgula
+pow = potência
+sqrt = raiz quadrada 
+factorial = factorial
+======================================================
+agora se eu quiser selecionar uma ou duas apenas da
+biblioteca fazemos assim:
+
+1 item da biblioteca:
+From math import 'algum item da biblioteca'
+
+2itens da biblioteca
+from math import 'item da biblioteca', ' outro item
+
+======================================================
+
+Para ver as bibliotecas ativas, só entrar no python 
+software foundation clicar em library references e no 
+tópico 9 por exemplo poderá ver as bibliotecas de math
+e estudar todas disponíveis

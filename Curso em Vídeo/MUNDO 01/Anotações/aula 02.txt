@@ -1,0 +1,46 @@
+=====================================================================================================================================
+Ordem de Precedência na hora de realizar uma conta no python
+
+1 - { () }Valores entre o parenteses    
+2 - { ** } Potência
+3 - { * / // %  }| Multiplicação | Divisão | Divisão inteira  | Resto da divisão | 
+    obs: É resolvido quem aparecer primeiro 
+4 - { + - } Por último MAIS e MENOS
+=============================================================================================================================
+Comandos para equação ( obs: caso não seja número ou uma input entre '' ele realiza a equação conforme o mandado)
+
++ SOMA
+- SUBTRAÇÃO
+* MULTIPLICAÇÃO
+** Potência
+/ Divisão
+// DIVISÃO inteira
+% Resto DA DIVISÃO
+**(1/2) Raiz Quadrada
+**(1/3) Raiz Cubica
+pow(x,y) Potência, onde X seria o número base e Y o valor que vai ser o exponente 
+==============================================================================================================
+
+{} = Caso você coloque : e um número ele vai reservar o espaço conforme a quantidade que você solicitar
+exemplo 20, ele vai reservar 20 espaços para mostrar a próxima informação, então tem como você fazer 
+o alinhamento deles.
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Exemplos
+
+{:20} reservado 20 espaços
+{:>20} Ele vai alinhar o Texto no final desse espaço
+{:<20} Ele vai alinhar o Texto no começo
+{:^20} Ele vai Centralizar
+{:=^20} Ele vai preencher com = os Espaços que não tiver informação, conforme for passado no .format
+{:.2f} Ele deixa 2 casa depois da virgula, o f é flutuante
+
+|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+===================================================================================================================
+
+[ Quebrar Linha no código ou pular a Linha]
+\n
+
+[Para Manter na mesma linha com outro print]
+end= ''
+

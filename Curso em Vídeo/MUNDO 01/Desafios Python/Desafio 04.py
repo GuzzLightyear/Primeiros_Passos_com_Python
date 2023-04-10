@@ -1,0 +1,7 @@
+n = input('Digite Algo ')
+print('essa é uma variavel minúscula? {}'.format('Sim' if n.islower() else 'Não'))
+print('essa é uma variavel maiuscula? {}'.format('Sim' if n.isupper() else 'Não'))
+print('essa é uma variavel que contém letra e número? {}'.format('Sim' if n.isalnum() else 'Não'))
+print('essa é uma variavel é um decimal {}'.format('Sim' if n.isdecimal() else 'Não'))
+print('essa é uma variavel é um número? {}'.format('Sim' if n.isnumeric() else 'Não'))
+print('essa é uma variavel capitalizada? {}'.format('Sim' if n.istitle() else 'Não'))

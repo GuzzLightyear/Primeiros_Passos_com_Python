@@ -1,0 +1,123 @@
+Cadeia de caracteres ( frase, str;)
+no Python é indicada pela ''
+a frase ou a cadeia na linguagem de programação ela 
+trabalha como se cada letra e espaço estivesse em um quadrado, 
+em um bloco individual seu 
+=======================================================================
+Exemplo: 
+
+frase = Curso em Vídeo Python
+
+|C|U|R|S|O| |E|M| |V|Í |D |E |O |  |P |Y |T |H |O |N |
+|0|1|2|3|4|5|6|7|8|9|¹0|¹¹|¹²|¹³|14|15|16|17|18|19|20|
+=======================================================================
+Como visto, cada letra representa um bloco, que representa uma posição
+a letra C da palavra (CURSO) é o bloco ou posição 0
+a quantidade de blocos será a aumentada ou diminuida
+conforme a necessidade da frase. Letra Maiuscula é 
+difirente de Minuscula Fazendo a frase str funcionar como uma lista, 
+assim possibilitando muitas coisas como:
+=======================================================================
+[FATIAMENTO de str]
+_______________________________________________________________________
+frase[9] = Ele vai localizar a 10° posição e vai pegar o V
+_______________________________________________________________________
+frase[9:13] = Ele vai pegar a 10° Posição e como tem : ele 
+            vai até a posição solicitada - 1, ou seja no caso
+            ele iria até o E formando (VIDE) caso queira 
+            pegar o (VÍDEO), tem que colocar 14 no lugar 
+            13, ou seja sempre uma posição a mais para pegar 
+            todo o seu desejado
+_______________________________________________________________________
+frase[9:21] = Como dito a cima ele diminui um do limite,
+            então não daria erro ele pararia no N,
+            e selecionaria a frase dos caracteres
+            9 até 20
+_______________________________________________________________________
+frase[9:21:2] = Vai selecionar o trecho
+                [VÍDEO PYTHON] porém o 2 ali, é uma determinante
+                que faz com que ele selecione de a cada 2 
+                blocos, ficando em vez de
+                [VÍDEO PYTHON] = [VDOPTO]
+_______________________________________________________________________
+frase[:5] = Onde você não mostra onde começar ele entende como 0
+            mesma coisa que escrever frase[0:5]
+_______________________________________________________________________
+frase[15:] = Mostrei o inicio dele mas não o fim, fazendo ele
+            entender que tem que ir até o final
+_______________________________________________________________________
+frase[9::3]= Ele começa na posição 10° vai até o final
+            pois não mostrei o final, e pulando de 3 em 3
+            mostrando [VEPH] 
+=======================================================================
+[Análise de str]
+____________________________________________________________________
+len(frase) = comprimento da frase
+_______________________________________________________________________
+frase.count('o') = contar quantas 'o' (nesse caso que coloquei'o') 
+                    tem na frase, no caso o 'o' esta minusculo,
+                    como a frase esta Maiuscula, ela mostraria
+                    o valor 0 e não 3
+_______________________________________________________________________
+frase.count('o', 0, 13) = contar quantos 'o' tem na frase, porém
+                            até o caracter número 13, no caso
+                            usamos uma análise com fatiamento
+_______________________________________________________________________
+frase.find('deo') = ele vai contar quantas vezes encontro e o inicio
+                    'deo'. no caso ele mostraria que no bloco 11
+                    {se minha frase estivesse Minuscula}
+_______________________________________________________________________
+frase.find('Android') = se colocar para achar algo que não tem
+                        ele vai retornar -1, falando que não existe
+                        nessa frase, nessa setença
+_______________________________________________________________________
+'CURSO' in frase = tem a palavra ou str 'CURSO' na frase?
+                    Sim, então ele retornaria true ou false
+                    e não a posição que esta de inicio
+_______________________________________________________________________
+=======================================================================
+[Transformação de str]
+_______________________________________________________________________
+frase.replace('PYTHON', 'ANDROID') = ele localizaria apalavra Python
+                                    e trocaria pela Android, adicionando
+                                    um espaço automaticamente.
+_______________________________________________________________________
+frase.upper() = a frase inteira vai ficar em Maiusculo,
+                tudo que tiver em minusculo se torna Maiuscula
+                e o que esta Maiuscula se mantém.
+_______________________________________________________________________
+frase.lower() = a frase inteira vai ficar em Minuscula
+                tudo que tiver em Maiuscula se torna minusculo
+                e o que esta minusculo se mantém.
+_______________________________________________________________________
+frase.capitalize() = Ele pega a primeira palavra de frase, e 
+                    deixa Maiusculo.
+_______________________________________________________________________
+frase.title() = Todas as palavras que começarem ou após um espaço 
+                fica com sua primeira letra Maiuscula.
+_______________________________________________________________________
+frase.strip() = Ele vai remover todos os espaços inúteis do começo 
+                do fim, nunca no meio da frase.
+_______________________________________________________________________
+frase.rstrip() = Ele vai remover todos os espaçoes inúteis apenas
+                 do lado direito (r = right = direita)
+_______________________________________________________________________
+frase.lstrip() = Ele vai remover todos os espaços inúteis apenas do 
+                    lado esquerdo (l = left = esquerdo)
+_______________________________________________________________________
+
+=======================================================================
+[Divisão em str]
+
+frase.split() = Ele vai tirar os espaços do meio de cada frase
+                e trasnformando em novas "listas" no caso da nossa frase
+                ficaria 4 partes.
+=======================================================================    
+([Junção em str]
+
+'-'.join(frase) = Ele vai pegar a divisão feita anteriomente
+                    e colocar - entre as 'listas' as 'frases
+                    caso queira colocar espaço só colocar
+                    ' '.join(frase)
+)
+=======================================================================
